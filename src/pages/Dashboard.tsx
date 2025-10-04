@@ -16,7 +16,6 @@ export default function Dashboard() {
       <div className="relative h-64 overflow-hidden">
         <img
           src={heroImage}
-          alt="AI Strategy Platform"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 flex items-center">
