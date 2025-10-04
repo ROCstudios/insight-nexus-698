@@ -3,13 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const navigationItems = [
   { title: "Overview", url: "/", icon: LayoutDashboard },
-  { title: "Insights", url: "/insights", icon: Lightbulb },
-  { title: "Opportunities", url: "/opportunities", icon: Target },
-  { title: "Teams", url: "/teams", icon: Users },
-  { title: "Simulator", url: "/simulator", icon: Sparkles },
-  { title: "Roadmap", url: "/roadmap", icon: Calendar },
-  { title: "Reports", url: "/reports", icon: FileText },
-  { title: "Settings", url: "/settings", icon: Settings },
+  { title: "Milestones", url: "/milestones", icon: Lightbulb },
+  { title: "Alternatives", url: "/alternatives", icon: Target },
+  { title: "Pricing & Options", url: "/pricing", icon: Users },
+
 ];
 
 export function AppSidebar() {
