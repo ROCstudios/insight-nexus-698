@@ -28,14 +28,14 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarContent>
-        <div className="px-4 py-6">
-          <h2 className={`font-bold text-lg bg-gradient-primary bg-clip-text text-transparent transition-all ${!open && "text-center text-xl"}`}>
+        <div className="px-6 py-8">
+          <h2 className={`font-bold text-3xl bg-gradient-primary bg-clip-text text-transparent transition-all ${!open && "text-center text-4xl"}`}>
             {open ? "Strategy Platform" : "SP"}
           </h2>
         </div>
 
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-xl px-4">Navigation</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navigationItems.map((item) => (
@@ -46,11 +46,11 @@ export function AppSidebar() {
                       end
                       className={({ isActive }) =>
                         isActive
-                          ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
-                          : "hover:bg-sidebar-accent/50"
+                          ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium text-2xl py-6"
+                          : "hover:bg-sidebar-accent/50 text-2xl py-6"
                       }
                     >
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="h-8 w-8" />
                       {open && <span>{item.title}</span>}
                     </NavLink>
                   </SidebarMenuButton>
@@ -65,8 +65,8 @@ export function AppSidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <NavLink to="/settings" className="hover:bg-sidebar-accent/50">
-                    <Settings className="h-4 w-4" />
+                  <NavLink to="/settings" className="hover:bg-sidebar-accent/50 text-2xl py-6">
+                    <Settings className="h-8 w-8" />
                     {open && <span>Settings</span>}
                   </NavLink>
                 </SidebarMenuButton>
