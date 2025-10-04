@@ -22,10 +22,10 @@ export default function Dashboard() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-accent/90 flex items-center">
           <div className="container mx-auto px-6">
             <h1 className="text-4xl font-bold text-primary-foreground mb-2">
-              AI Strategy Overview
+              Here's Our Proposal For You, Yao 👋
             </h1>
-            <p className="text-lg text-primary-foreground/90">
-              Accelerating client excellence through intelligent automation
+            <p className="text-xl text-primary-foreground/90">
+              The menu on the left have side will give you more information on timeline, options for "good, better, best", and pricing
             </p>
           </div>
         </div>

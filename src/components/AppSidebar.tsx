@@ -11,11 +11,11 @@ const navigationItems = [
 
 export function AppSidebar() {
   return (
-    <aside className="w-1/4 min-w-[300px] h-screen sticky top-0 bg-sidebar border-r border-sidebar-border flex flex-col">
+    <aside className="w-1/6 min-w-[100px] h-screen sticky top-0 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Header */}
       <div className="px-8 py-10">
-        <h2 className="font-bold text-4xl bg-gradient-primary bg-clip-text text-transparent">
-          Strategy Platform
+        <h2 className="font-bold text-2xl">
+          Let's Book a Call
         </h2>
       </div>
 
@@ -28,7 +28,7 @@ export function AppSidebar() {
               to={item.url}
               end={item.url === "/"}
               className={({ isActive }) =>
-                `flex items-center gap-4 px-6 py-5 rounded-lg text-2xl font-medium transition-all ${
+                `flex items-center gap-4 px-6 py-5 rounded-lg text-xl text-bold transition-all ${
                   isActive
                     ? "bg-sidebar-accent text-sidebar-accent-foreground shadow-md"
                     : "text-sidebar-foreground hover:bg-sidebar-accent/50 hover:text-sidebar-accent-foreground"
