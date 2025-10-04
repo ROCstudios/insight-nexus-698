@@ -13,6 +13,23 @@ import Roadmap from "./pages/Roadmap";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBHEfdON2hyH_luFKTClE7SjRb5fWwFCGw",
+  authDomain: "yao-proposal-39d52.firebaseapp.com",
+  projectId: "yao-proposal-39d52",
+  storageBucket: "yao-proposal-39d52.firebasestorage.app",
+  messagingSenderId: "1062023353009",
+  appId: "1:1062023353009:web:7d236033cca3ecdadb8890"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 const queryClient = new QueryClient();
 

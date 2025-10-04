@@ -9,12 +9,7 @@ const teams = [
     cost: 2000,
     painPoints: [
       {
-        "title": "Research and document data sources. Test data schema.",
-        "description": "We will research relevant data sources from providers and public APIs. We will check that they have the data we need, respond quickly, and are likely to last. We will download sample data and test it with a small scoring rubric to confirm fit.",
-        "severity": "medium"
-      },
-      {
-        "title": "Reliably fetch data sources and save them to our cloud database.",
+        "title": "Research and reliably fetch data sources and save them to our cloud database.",
         "description": "We will set up a reliable pull of the key data at regular intervals and store it in one place. This creates a clean history so we can track changes over time and run simple backtests. It makes the score usable inside your app and reports.",
         "severity": "medium"
       },
@@ -28,11 +23,6 @@ const teams = [
         "description": "We will turn raw numbers into clear scores and one simple 0 to 100. We will smooth out noise so results do not jump hour to hour. Then we will compare against simple baselines to make sure the score is steady and useful.",
         "severity": "high"
       },
-      {
-        "title": "Create simple API interfaces in coordination with our backend architecture to fetch simple data.",
-        "description": "We will provide clean endpoints your site and widget can read. Get top rankings, open an asset, and see history. Responses will be fast and consistent so your team can plug it in with minimal work.",
-        "severity": "medium"
-      }
     ],
     opportunities: [
       "Faster development",
