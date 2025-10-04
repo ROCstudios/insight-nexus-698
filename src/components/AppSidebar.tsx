@@ -1,77 +1,46 @@
 import { LayoutDashboard, Lightbulb, Target, Users, Sparkles, Calendar, FileText, Settings } from "lucide-react";
 import { NavLink } from "react-router-dom";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
-  useSidebar,
-} from "@/components/ui/sidebar";
 
 const navigationItems = [
   { title: "Overview", url: "/", icon: LayoutDashboard },
   { title: "Milestones", url: "/milestones", icon: Lightbulb },
   { title: "Alternatives", url: "/alternatives", icon: Target },
   { title: "Pricing & Options", url: "/pricing", icon: Users },
+
 ];
 
 export function AppSidebar() {
-  const { open } = useSidebar();
-
   return (
-    <Sidebar collapsible="icon">
-      <SidebarContent>
-        <div className="px-4 py-6">
-          <h2 className={`font-bold text-lg bg-gradient-primary bg-clip-text text-transparent transition-all ${!open && "text-center text-xl"}`}>
-            {open ? "Strategy Platform" : "SP"}
-          </h2>
+    <aside className="w-1/4 min-w-[300px] h-screen sticky top-0 bg-sidebar border-r border-sidebar-border flex flex-col">
+      {/* Header */}
+      <div className="px-8 py-10">
+        <h2 className="font-bold text-4xl bg-gradient-primary bg-clip-text text-transparent">
+          Strategy Platform
+        </h2>
+      </div>
+
+      {/* Navigation */}
+      <nav className="flex-1 px-6 py-4">
+        <div className="space-y-2">
+          {navigationItems.map((item) => (
+            <NavLink
+              key={item.title}
+              to={item.url}
+              end={item.url === "/"}
+              className={({ isActive }) =>
+                `flex items-center gap-4 px-6 py-5 rounded-lg text-2xl font-medium transition-all ${
+                  isActive
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground shadow-md"
+                    : "text-sidebar-foreground hover:bg-sidebar-accent/50 hover:text-sidebar-accent-foreground"
+                }`
+              }
+            >
+              <item.icon className="h-8 w-8 flex-shrink-0" />
+              <span>{item.title}</span>
+            </NavLink>
+          ))}
         </div>
-
-        <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              {navigationItems.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <NavLink
-                      to={item.url}
-                      end
-                      className={({ isActive }) =>
-                        isActive
-                          ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
-                          : "hover:bg-sidebar-accent/50"
-                      }
-                    >
-                      <item.icon className="h-4 w-4" />
-                      {open && <span>{item.title}</span>}
-                    </NavLink>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-
-        <SidebarGroup className="mt-auto">
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <NavLink to="/settings" className="hover:bg-sidebar-accent/50">
-                    <Settings className="h-4 w-4" />
-                    {open && <span>Settings</span>}
-                  </NavLink>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
-      </SidebarContent>
-    </Sidebar>
+      </nav>
+    </aside>
   );
 }
