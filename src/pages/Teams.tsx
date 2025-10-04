@@ -1,92 +1,138 @@
 import { Users, Clock, AlertCircle, Target } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MetricCard } from "@/components/MetricCard";
 
 const teams = [
   {
     id: 1,
-    name: "Case Teams",
-    members: 45,
-    hoursSaved: 680,
+    name: "Crypto Relevancy Ranking System Calculated From Data Sources. No Frontend.",
+    cost: 2000,
     painPoints: [
       {
-        title: "Document Review Overhead",
-        description: "4-6 hours per case spent on manual document review",
-        severity: "high",
-        quotes: ["We spend too much time just reading files", "Document prep is our biggest bottleneck"],
+        "title": "Research and document data sources. Test data schema.",
+        "description": "We will research relevant data sources from providers and public APIs. We will check that they have the data we need, respond quickly, and are likely to last. We will download sample data and test it with a small scoring rubric to confirm fit.",
+        "severity": "medium"
       },
       {
-        title: "Research Time",
-        description: "Extensive time spent on preliminary case research",
-        severity: "medium",
-        quotes: ["Research phase takes 2-3 days minimum"],
+        "title": "Reliably fetch data sources and save them to our cloud database.",
+        "description": "We will set up a reliable pull of the key data at regular intervals and store it in one place. This creates a clean history so we can track changes over time and run simple backtests. It makes the score usable inside your app and reports.",
+        "severity": "medium"
       },
+      {
+        "title": "Integrate with APIs like GitHub and social communities.",
+        "description": "We will connect to GitHub and major social platforms to collect the basics we need. Mentions, engagement, and project activity. We will keep access keys safe and follow each platform’s rules so the feeds stay stable.",
+        "severity": "medium"
+      },
+      {
+        "title": "Develop our Crypto Relevancy Ranking System. Test against benchmarks.",
+        "description": "We will turn raw numbers into clear scores and one simple 0 to 100. We will smooth out noise so results do not jump hour to hour. Then we will compare against simple baselines to make sure the score is steady and useful.",
+        "severity": "high"
+      },
+      {
+        "title": "Create simple API interfaces in coordination with our backend architecture to fetch simple data.",
+        "description": "We will provide clean endpoints your site and widget can read. Get top rankings, open an asset, and see history. Responses will be fast and consistent so your team can plug it in with minimal work.",
+        "severity": "medium"
+      }
     ],
-    opportunities: ["AI Document Analysis Tool", "Legal Research Assistant"],
+    opportunities: [
+      "Faster development",
+      "Portable",
+    ],
   },
   {
     id: 2,
-    name: "Research Team",
-    members: 12,
-    hoursSaved: 280,
+    name: "Complete Crypto Relevancy Ranking API With Real-Time Rankings. Simple Frontend.",
+    cost: 2750,
     painPoints: [
       {
-        title: "Manual Precedent Search",
-        description: "Time-intensive process of finding relevant case law",
+        title: "Crypto Relevancy Ranking System Calculated From Data Sources",
+        description: "Everything from the previous package(s)",
         severity: "high",
-        quotes: ["Finding similar cases is like finding a needle in a haystack"],
       },
       {
-        title: "Synthesis Time",
-        description: "Summarizing and synthesizing research takes hours",
-        severity: "medium",
-        quotes: ["We do the same type of research over and over"],
+        "title": "Production level backend architecture initialized for scalability and use with front-end applications.",
+        "description": "We will stand up a secure, scalable backend that stores clean history, schedules data pulls, and serves results quickly. This includes cloud database setup, job scheduling, basic monitoring and alerts, and safe key management so the system is ready for growth.",
+        "severity": "medium"
       },
+      {
+        "title": "Real-Time scoring enabled with frequent and reactive updates to our data sources",
+        "description": "Enable frequent updates so scores refresh on a reliable cadence, with the option to react faster when key signals spike. Data is smoothed to avoid jitter and each asset shows a freshness indicator so you know when it last updated.",
+        "severity": "medium"
+      },
+      {
+        "title": "Reliable and complete API endpoints. Extensive documentation for other developers. Thurough network security.",
+        "description": "Provide stable endpoints for rankings, asset details, history, and search with clear examples and usage limits. Documentation will cover request and response shapes, common filters, and error handling. Security includes HTTPS, keys, rate limits, and basic abuse protection.",
+        "severity": "high"
+      },
+      {
+        "title": "Emeddable frontend dashboard and details view..",
+        "description": "Clean design system with thoughtful design that seamlessly shows the frontend.",
+        "severity": "medium"
+      }
     ],
-    opportunities: ["Legal Research Assistant", "Case Precedent Matching"],
+    opportunities: ["Responsive", "Accurate", "Affordable"],
   },
   {
     id: 3,
-    name: "Corporate Team",
-    members: 28,
-    hoursSaved: 420,
+    name: "Complete Package. Complete Real-Time API & Beautiful Modern, Reactive Frontend",
+    cost: 5500,
     painPoints: [
       {
-        title: "Contract Review",
-        description: "Manual review of contracts is extremely time-consuming",
+        title: "Complete Crypto Relevancy Ranking API With Real-Time Rankings",
+        description: "Everything from the previous package(s)",
         severity: "high",
-        quotes: ["Contract review is our biggest time sink"],
       },
       {
-        title: "Compliance Checks",
-        description: "Manual compliance verification across documents",
-        severity: "medium",
-        quotes: ["Compliance review adds days to every deal"],
+        "title": "Modern frontend development using the latest platforms to seamlessly integrate into your existing site.",
+        "description": "Deliver an embeddable, responsive widget that drops into your current site and loads fast. It will show the rank table, asset drawer, and simple filters, with a lightweight install on WordPress or a direct script include for other setups.",
+        "severity": "high"
       },
+      {
+        "title": "Design, UI, and one-of-a-kind user experience priority. Animations and custom digital assets.",
+        "description": "Clean design system with thoughtful motion and custom icons so the score is easy to read and remember. Empty states, tooltips, and accessibility basics are included, alongside performance tuning for smooth interactions.",
+        "severity": "medium"
+      },
+      {
+        "title": "Side-by-side compare view",
+        "description": "Pick any two projects and see their scores, pillars, and key signals lined up next to each other. Fast, simple comparisons your team can use in stories, calls, and decks.",
+        "severity": "high"
+      },
+      {
+        "title": "Custom branded embeds and themes",
+        "description": "Match the look to your brand with your logo, colors, and dark mode. Generate ready-to-paste embeds for posts and partner pages so everything feels native.",
+        "severity": "medium"
+      },
+      {
+        "title": "Admin console for complete control of the scoring parameters and display of the app",
+        "description": "Tweak weights, fix ticker names, and decide what shows on the page. Publish changes with one click and see a clear history of what changed and why.",
+        "severity": "high"
+      },
+      {
+        "title": "One-click data downloads for your team and partners",
+        "description": "Export today’s rankings or a date range to CSV or JSON in seconds. Perfect for decks, reports, and sharing with media or sponsor partners without extra work.",
+        "severity": "high"
+      }
     ],
-    opportunities: ["Contract Review System", "Automated Compliance Checker"],
+    opportunities: ["Engaging user experience", "Top tier designs", "Industry leading application"],
   },
   {
     id: 4,
-    name: "Client Services",
-    members: 18,
-    hoursSaved: 180,
+    name: "Complete Package. Action Takers Offer (Only Available Until October 7)",
+    cost: 3900,
     painPoints: [
       {
-        title: "Repetitive Client Inquiries",
-        description: "Same questions asked repeatedly by clients",
-        severity: "medium",
-        quotes: ["We answer the same questions every day"],
+        title: "Complete Package. Complete Real-Time API & Beautiful Modern, Reactive Frontend",
+        description: "Everything from the previous package(s)",
+        severity: "high",
       },
       {
-        title: "Status Update Requests",
-        description: "Manual updates take time away from billable work",
+        title: "Big discount for clients that take action and want to win in life",
+        description: "I, personally, prefer to work with people who make decisions. People who want to go somewhere in life and achieve things. Working with people like myself means that communication will be smoother and results will greatly exceed expectations. To work with these people I'm willing to discount my work.",
         severity: "low",
         quotes: ["Status updates interrupt our workflow"],
       },
     ],
-    opportunities: ["Client Portal Enhancement", "AI Chatbot"],
+    opportunities: ["Everything included", "One hell of a deal"],
   },
 ];
 
@@ -96,36 +142,10 @@ export default function Teams() {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Team Analysis</h1>
+          <h1 className="text-3xl font-bold mb-2">Scroll to the bottom and pick the option that's best for you.</h1>
           <p className="text-muted-foreground">
-            Deep dive into team-specific pain points and AI opportunities
+            Build once. That's our motto. We'll recommend a few options with a few prices for what we have in mind for the price below OR select any of the combined features for custom pricing.
           </p>
-        </div>
-
-        {/* Summary Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <MetricCard
-            title="Total Teams"
-            value={teams.length}
-            icon={Users}
-          />
-          <MetricCard
-            title="Team Members"
-            value={teams.reduce((sum, team) => sum + team.members, 0)}
-            icon={Users}
-          />
-          <MetricCard
-            title="Total Hours Saved"
-            value={`${teams.reduce((sum, team) => sum + team.hoursSaved, 0)}`}
-            subtitle="per month"
-            icon={Clock}
-            trend="up"
-          />
-          <MetricCard
-            title="Pain Points"
-            value={teams.reduce((sum, team) => sum + team.painPoints.length, 0)}
-            icon={AlertCircle}
-          />
         </div>
 
         {/* Teams List */}
@@ -136,16 +156,15 @@ export default function Teams() {
               <div className="flex items-center justify-between mb-6 pb-6 border-b">
                 <div className="flex items-center gap-4">
                   <div className="rounded-full bg-primary/10 p-4">
-                    <Users className="h-6 w-6 text-primary" />
+                    <Target className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold">{team.name}</h2>
-                    <p className="text-muted-foreground">{team.members} team members</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-3xl font-bold metric-number text-success">{team.hoursSaved}</p>
-                  <p className="text-sm text-muted-foreground">hours saved/month</p>
+                  <p className={`text-3xl font-bold metric-number ${team.cost === 3900 ? 'text-success' : 'text-default'}`}>${team.cost}
+                  </p>
                 </div>
               </div>
 
@@ -153,7 +172,7 @@ export default function Teams() {
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <AlertCircle className="h-5 w-5 text-warning" />
-                  Pain Points
+                  What it includes
                 </h3>
                 <div className="space-y-4">
                   {team.painPoints.map((pain, index) => (
@@ -179,19 +198,11 @@ export default function Teams() {
                               : ""
                           }
                         >
-                          {pain.severity} priority
+                          {pain.severity} difficulty
                         </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground mb-3">{pain.description}</p>
                       
-                      {/* Quotes */}
-                      <div className="space-y-2">
-                        {pain.quotes.map((quote, qIndex) => (
-                          <div key={qIndex} className="bg-background rounded px-3 py-2">
-                            <p className="text-xs italic">"{quote}"</p>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   ))}
                 </div>
@@ -201,7 +212,7 @@ export default function Teams() {
               <div>
                 <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                   <Target className="h-5 w-5 text-primary" />
-                  Recommended AI Opportunities
+                  Benefits of this package
                 </h3>
                 <div className="flex gap-3 flex-wrap">
                   {team.opportunities.map((opp, index) => (

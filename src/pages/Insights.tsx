@@ -8,59 +8,48 @@ import { Button } from "@/components/ui/button";
 const insights = [
   {
     id: 1,
-    title: "Document Review Automation",
-    metric: "480 hours/month",
+    title: "Connect to Data Sources & Develop Ranking System",
+    metric: "Relevevancy Ranking System IP",
     impact: "high",
-    category: "Efficiency",
-    description: "AI-powered document analysis can reduce manual review time by 60%",
-    quote: "We spend 4-6 hours per case just reading through files",
-    source: "Senior Associate, Litigation",
-    teams: ["Case Teams", "Associates"],
+    category: "Research",
+    description: "For every needed data point of the Relevency Ranking System we'll research, test, and validate data sources to ensure accuracy and reliability. These data sources will be sraped and saved locally. Regular calls with be scheduled to decide on the exact scoring and ranking method we'll use to power the entire applicaiton.",
+    quote: "The Relevency Ranking System will use a combination of calculations in relation to BTC being the unit of mesure. We will need to integrate with the Github API and others. Apify Bots will be employed for additional market data..",
+    source: "Tech Talk",
+    teams: ["IP Development", "Databases", "Apify", "Data Science", "Web Scraping", "API Integration", "Python"],
   },
   {
     id: 2,
-    title: "Automated Research Synthesis",
-    metric: "35 hours/week",
+    title: "Backend API Development. Frontend Designs",
+    metric: "Receive Rankings In Real Time",
     impact: "high",
-    category: "Research",
-    description: "Natural language AI can synthesize case law and precedents automatically",
-    quote: "Initial research is repetitive and time-consuming",
-    source: "Research Team Lead",
-    teams: ["Research", "Case Teams"],
+    category: "Development",
+    description: "With the Ranking System complete we'll need to make this accessible and easy to use. I'll develop a backend API that will power the entire application and make it easy to integrate with other systems. In addition, I'll design a beautiful frontend that is intuitive and user-friendly.",
+    quote: "With the API complete and hostied we'll be able to access all of the information we need using simple API calls via our simple UI or any other HTTP tool",
+    source: "Tech Talk",
+    teams: ["Python", "Flask", "Google Cloud", "Postman", "Figma"],
   },
   {
     id: 3,
-    title: "Client Email Drafting",
-    metric: "40% faster",
-    impact: "medium",
-    category: "Communication",
-    description: "AI assistance for email drafting improves consistency and speed",
-    quote: "Email drafting takes longer than it should",
-    source: "Partner",
+    title: "Frontend Dashboard & Details",
+    metric: "Beautiful, Intuitive UI",
+    impact: "high",
+    category: "Frontend",
+    description: "The frontend will be the face of the application and the first thing users will see. I'll design a beautiful dashboard that is easy to navigate and provides all the information users need at a glance. In addition, I'll develop detailed views for each data point that provide more in-depth information and insights.",
+    quote: "We'll need to understand the existing tech stack of your website for a seamless integration. We plan to use React, TailwindCSS, and Typescript for a responsive and fast user experience.",
+    source: "Tech Talk",
     teams: ["Partners", "Associates"],
   },
   {
     id: 4,
     title: "Contract Review Acceleration",
     metric: "65% reduction",
-    impact: "high",
+    impact: "medium",
     category: "Efficiency",
     description: "AI can identify key clauses and risks in contracts automatically",
     quote: "Contract review is our biggest time sink",
-    source: "Corporate Team",
+    source: "Tech Talk",
     teams: ["Corporate", "Transactional"],
-  },
-  {
-    id: 5,
-    title: "Case Precedent Matching",
-    metric: "8 hours/case",
-    impact: "medium",
-    category: "Research",
-    description: "AI can find relevant precedents faster than manual search",
-    quote: "Finding similar cases is like finding a needle in a haystack",
-    source: "Senior Partner",
-    teams: ["Litigation", "Research"],
-  },
+  }
 ];
 
 export default function Insights() {
@@ -78,9 +67,9 @@ export default function Insights() {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Insights Repository</h1>
+          <h1 className="text-3xl font-bold mb-2">Development Milestones</h1>
           <p className="text-muted-foreground">
-            Explore key findings from diagnostic interviews and data analysis
+            Explore the exact steps that we're going to take to build you a comprehensice app that's unlike anything else out there.
           </p>
         </div>
 
@@ -109,7 +98,7 @@ export default function Insights() {
               </div>
               <div>
                 <p className="text-2xl font-bold metric-number">{insights.length}</p>
-                <p className="text-xs text-muted-foreground">Total Insights</p>
+                <p className="text-xs text-muted-foreground">Total Milestones</p>
               </div>
             </div>
           </Card>
@@ -132,8 +121,8 @@ export default function Insights() {
                 <Clock className="h-4 w-4 text-accent" />
               </div>
               <div>
-                <p className="text-2xl font-bold metric-number">2,340</p>
-                <p className="text-xs text-muted-foreground">Hours/Month</p>
+                <p className="text-2xl font-bold metric-number">100+</p>
+                <p className="text-xs text-muted-foreground">Hours of Development</p>
               </div>
             </div>
           </Card>
@@ -144,8 +133,8 @@ export default function Insights() {
                 <Users className="h-4 w-4 text-warning" />
               </div>
               <div>
-                <p className="text-2xl font-bold metric-number">12</p>
-                <p className="text-xs text-muted-foreground">Teams Affected</p>
+                <p className="text-2xl font-bold metric-number">37</p>
+                <p className="text-xs text-muted-foreground">Total Features</p>
               </div>
             </div>
           </Card>
@@ -175,14 +164,14 @@ export default function Insights() {
                 </div>
                 <div className="text-right ml-4">
                   <p className="text-2xl font-bold metric-number text-primary">{insight.metric}</p>
-                  <p className="text-xs text-muted-foreground">potential savings</p>
+                  <p className="text-xs text-muted-foreground">Guaranteed Result</p>
                 </div>
               </div>
 
               {/* Quote */}
               <div className="bg-muted/50 rounded-lg p-4 mb-4">
-                <p className="text-sm italic mb-2">"{insight.quote}"</p>
                 <p className="text-xs text-muted-foreground">— {insight.source}</p>
+                <p className="text-sm italic mb-2">"{insight.quote}"</p>
               </div>
 
               {/* Teams */}
