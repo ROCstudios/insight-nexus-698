@@ -77,7 +77,7 @@ export default function Opportunities() {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Here Are Your Alternatives</h1>
+          <h1 className="text-3xl font-bold mb-2">Here Are Your Alternatives If You Don't Work With Me</h1>
           <p className="text-muted-foreground">
             Remember, hiring the wrong freelancer or agency is going to double or triple your costs and you'll have to go through the entire hiring process again.
           </p>
