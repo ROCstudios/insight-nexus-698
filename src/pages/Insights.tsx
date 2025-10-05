@@ -37,18 +37,18 @@ const insights = [
     description: "The frontend will be the face of the application and the first thing users will see. I'll design a beautiful dashboard that is easy to navigate and provides all the information users need at a glance. In addition, I'll develop detailed views for each data point that provide more in-depth information and insights.",
     quote: "We'll need to understand the existing tech stack of your website for a seamless integration. We plan to use React, TailwindCSS, and Typescript for a responsive and fast user experience.",
     source: "Tech Talk",
-    teams: ["Partners", "Associates"],
+    teams: ["React", "TailwindCSS", "TypeScript", "Figma" ],
   },
   {
     id: 4,
-    title: "Contract Review Acceleration",
-    metric: "65% reduction",
-    impact: "medium",
-    category: "Efficiency",
-    description: "AI can identify key clauses and risks in contracts automatically",
-    quote: "Contract review is our biggest time sink",
+    title: "User Acceptance Testing & Site Integration",
+    metric: "Optional Feedback Loop",
+    impact: "low",
+    category: "Customer Satisfaction",
+    description: "Before launching the application, you'll get a copy of the app to ensure that everything is working as expected and that you are satisfied with the experience. I'll incorporate your feedback and make any necessary adjustments before launching the application to the public.",
+    quote: "I'll publish a staging build (not yet public) with full access that you'll be able to use in real-time with synced data from trusted sources. Code will be ready to add to your site once you approve of the UI and UX. ",
     source: "Tech Talk",
-    teams: ["Corporate", "Transactional"],
+    teams: ["Testing", "Quality Assurance", "Customer Feedback", "Deployment", "Documentation"],
   }
 ];
 
